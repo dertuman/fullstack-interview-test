@@ -1,0 +1,19 @@
+.Title {
+    margin: 40px;
+    text-align: center;
+}
+.pullRequestInnerContainer {
+    margin: 10px;
+}
+.pullRequestInnerContainer p {
+    margin: 0;
+}
+.pullRequestInnerContainer select, .pullRequestInnerContainer input, .pullRequestInnerContainer textarea {
+    width: 100%;
+}
+.pullRequestInnerContainer label {
+    font-weight: bold;
+    margin: 20px 0;
+    width: 50%;
+    text-align: center;
+}
