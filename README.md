@@ -1,3 +1,5 @@
+With great interest in forming part of the Flat.mx team and growing with along it, I here send the finished full-stack interview test. 
+
 The following are instructions on how to run the React project which has everything needed to fulfill the test aspects. This project was not focused heavily on CSS but more on the functionality of the API. This project requires Node.js to run. Once installed with npm install, the project can be opened in a development server with the command 'npm start', as instructed in the following points.
 
 # Getting Started with Create React App
