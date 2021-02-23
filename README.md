@@ -1,3 +1,7 @@
+# Important
+
+In order for the project to make the requests to the api correctly, the environment variables must be set. The .env file has been added to the gitignore configuration, so it must be added manually in the root folder of the project, on the same level as the gitignore file and this readme file.
+
 With great interest in forming part of the Flat.mx team and growing with along it, I here send the finished full-stack interview test. 
 
 The following are instructions on how to run the React project which has everything needed to fulfill the test aspects. This project was not focused heavily on CSS but more on the functionality of the API. This project requires Node.js to run. Once installed with npm install, the project can be opened in a development server with the command 'npm start', as instructed in the following points.
