@@ -4,7 +4,7 @@ import styles from './PullRequestList.module.css';
 import axios from "axios";
 
 const closePullRequest = async(number) => {
-    const octokit = new Octokit({ auth: '4e8f7f0063a502dfdbddcb5ee580d5a2cee616bd' }),
+    const octokit = new Octokit({ auth: process.env.REACT_APP_API_NOT_SECRET }),
         owner = 'dertuman',
         repo = 'fullstack-interview-test',
         state = 'closed';

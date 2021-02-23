@@ -5,7 +5,7 @@ import axios from "axios";
 
 const generatePullRequestAndMerge = async() => {
     // First octokit instance used to make the pull requests
-    const octokitCreatePullRequest = new Octokit({ auth: '4e8f7f0063a502dfdbddcb5ee580d5a2cee616bd' }),
+    const octokitCreatePullRequest = new Octokit({ auth: process.env.REACT_APP_API_NOT_SECRET }),
         owner = 'dertuman',
         repo = 'fullstack-interview-test',
         title = document.getElementById('title').value,
@@ -14,7 +14,7 @@ const generatePullRequestAndMerge = async() => {
         head  = document.getElementById('selectedHead').value;
 
     // Second octokit instance used to merge the pull requests if need be
-    const octokitMergePullRequest = new Octokit({ auth: '4e8f7f0063a502dfdbddcb5ee580d5a2cee616bd' }),
+    const octokitMergePullRequest = new Octokit({ auth: process.env.REACT_APP_API_NOT_SECRET }),
         owner2 = 'dertuman',
         repo2 = 'fullstack-interview-test';
 
@@ -62,6 +62,7 @@ export default class CreatePullRequest extends Component {
             .catch((error) => {
                 console.log(error);
             });
+            console.log(process.env)
     }
 
     getSelectedBase = (e) => {
@@ -110,7 +111,7 @@ export default class CreatePullRequest extends Component {
                             <input type='radio' value='merge' name='saveOrMerge'></input>
                         </label>
                     </div>
-                    <div className={styles.pullRequestInnerContainer}>
+                    <div className={[styles.pullRequestInnerContainer, 'text-center'].join(' ')}>
                         <button className='btn btn-dark' onClick={generatePullRequestAndMerge}>Create Pull Request</button>
                     </div>
                 </div>
